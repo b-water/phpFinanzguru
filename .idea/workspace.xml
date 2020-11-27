@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="fix cs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Mapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Mapping.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" />
+    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/php.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +160,7 @@
       <updated>1606482960017</updated>
       <workItem from="1606482961954" duration="14502000" />
       <workItem from="1606506523653" duration="529000" />
-      <workItem from="1606513210963" duration="1272000" />
+      <workItem from="1606513210963" duration="1360000" />
     </task>
     <task id="LOCAL-00001" summary="Update ignore">
       <created>1606505648507</created>
@@ -186,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606514301340</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix cs">
+      <created>1606514508306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606514508306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

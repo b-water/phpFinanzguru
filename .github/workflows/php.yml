@@ -40,6 +40,6 @@ jobs:
       run: composer run-script phpstan
 
     - name: Run phpunit
-      run: composer run-script test
+      run: composer run-script phpunit
 
 
