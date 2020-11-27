@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/Reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Excel/Reader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/Reader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/ReaderInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ExcelReaderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ReaderTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -89,13 +92,30 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.ExcelReaderTest.testConstruct (1)">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\nico\dev\phpFinanzguru\src\phpFinanzguru" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.ReaderTest.testConstruct">
+    <configuration name="ExcelReaderTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="bwater\Tests\ExcelReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExcelReaderTest.testConstruct (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="bwater\Tests\ExcelReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ExcelReaderTest.php" method="testConstruct" scope="Method" />
+      <TestRunner class="bwater\Tests\ExcelReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ExcelReaderTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="bwater\phpFinanzguru\Tests\ExcelReaderTest" file="$PROJECT_DIR$/tests/ExcelReaderTest.php" method="testConstruct" scope="Method" />
+      <TestRunner class="bwater\phpFinanzguru\Tests\ExcelReaderTest" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReaderTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="bwater\Tests\ReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReaderTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="bwater\Tests\ReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -111,10 +131,16 @@
       <item itemvalue="PHPUnit.phpunit.xml" />
       <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct" />
       <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct (1)" />
+      <item itemvalue="PHPUnit.ExcelReaderTest" />
+      <item itemvalue="PHPUnit.ReaderTest.testConstruct" />
+      <item itemvalue="PHPUnit.ReaderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ReaderTest.testConstruct" />
+        <item itemvalue="PHPUnit.ReaderTest" />
         <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct (1)" />
+        <item itemvalue="PHPUnit.ExcelReaderTest" />
         <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct" />
       </list>
     </recent_temporary>
@@ -127,11 +153,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606482960017</updated>
-      <workItem from="1606482961954" duration="3350000" />
+      <workItem from="1606482961954" duration="13688000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PHPUnitRunConfigurationType">
+        <watch expression="$collection" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
