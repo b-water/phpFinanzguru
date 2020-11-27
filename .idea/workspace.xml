@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="basic import implementation">
-      <change afterPath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ReaderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/php.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/ReaderInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ExcelReaderTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +162,7 @@
       <updated>1606482960017</updated>
       <workItem from="1606482961954" duration="14502000" />
       <workItem from="1606506523653" duration="529000" />
-      <workItem from="1606513210963" duration="491000" />
+      <workItem from="1606513210963" duration="1061000" />
     </task>
     <task id="LOCAL-00001" summary="Update ignore">
       <created>1606505648507</created>
