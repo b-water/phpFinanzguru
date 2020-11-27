@@ -1,5 +1,5 @@
 {
-    "name": "bwater/php-finanzguru",
+    "name": "b-water/php-finanzguru",
     "description": "Parse your Finanzguru Excel Export into PHP",
     "type": "library",
     "authors": [
