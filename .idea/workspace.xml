@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="" />
+    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/Reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Excel/Reader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Debian GNU/Linux">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
@@ -73,19 +79,42 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="WSL" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="WSL" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.ExcelReaderTest.testConstruct">
+  <component name="RunManager" selected="PHPUnit.ExcelReaderTest.testConstruct (1)">
+    <configuration name="ExcelReaderTest.testConstruct (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="bwater\Tests\ExcelReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ExcelReaderTest.php" method="testConstruct" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExcelReaderTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="bwater\phpFinanzguru\Tests\ExcelReaderTest" file="$PROJECT_DIR$/tests/ExcelReaderTest.php" method="testConstruct" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="Debian GNU/Linux" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct" />
+      <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct (1)" />
         <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct" />
       </list>
     </recent_temporary>
@@ -98,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606482960017</updated>
-      <workItem from="1606482961954" duration="655000" />
+      <workItem from="1606482961954" duration="3350000" />
     </task>
     <servers />
   </component>

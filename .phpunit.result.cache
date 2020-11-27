@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":158:{a:2:{s:7:"defects";a:1:{s:43:"bwater\Tests\ExcelReaderTest::testConstruct";i:5;}s:5:"times";a:1:{s:43:"bwater\Tests\ExcelReaderTest::testConstruct";d:0.001;}}}
