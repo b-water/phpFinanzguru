@@ -9,14 +9,13 @@
         }
     ],
     "autoload": {
-        "psr-4": { "": "src/" }
+        "psr-4": { "bwater\\": "src/" }
     },
-    "repositories" : [
-        {
-            "type": "vcs",
-            "url": "https://github.com/b-water/phpFinanzguru"
+    "autoload-dev": {
+        "psr-4": {
+            "bwater\\Tests\\": "tests/"
         }
-    ],
+    },
     "require-dev": {
         "phpunit/phpunit": "^9"
     },

@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace bwater\phpFinanzguru\Tests;
+namespace bwater\Tests;
 
 use bwater\phpFinanzguru\Excel\Reader;
 use PHPUnit\Framework\TestCase;
