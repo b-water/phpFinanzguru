@@ -1,6 +1,6 @@
 <?php
 
-namespace bwater\phpFinanzguru\Excel;
+namespace bwater\phpFinanzguru;
 
 interface ReaderInterface {
 

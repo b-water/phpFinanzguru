@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="basic import implementation">
+      <change afterPath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ReaderTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpFinanzguru.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/Reader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/ReaderInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ExcelReaderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ReaderTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Excel/ReaderInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ExcelReaderTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PHPCSFixerProjectConfiguration">
+    <option name="selectedConfigurationId" value="08955c40-969f-4dd9-9532-9a4333a03f57" />
+  </component>
+  <component name="PHPCodeSnifferProjectConfiguration">
+    <option name="selectedConfigurationId" value="08955c40-969f-4dd9-9532-9a4333a03f57" />
+  </component>
+  <component name="PhpStanProjectConfiguration">
+    <option name="selectedConfigurationId" value="08955c40-969f-4dd9-9532-9a4333a03f57" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Debian GNU/Linux">
     <include_path>
@@ -70,6 +84,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
       <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
       <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ksIdSohLXes8Lcae3oQEXIseV8" />
@@ -90,6 +105,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -153,12 +169,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606482960017</updated>
-      <workItem from="1606482961954" duration="13688000" />
+      <workItem from="1606482961954" duration="14502000" />
+      <workItem from="1606506523653" duration="529000" />
+      <workItem from="1606513210963" duration="491000" />
     </task>
+    <task id="LOCAL-00001" summary="Update ignore">
+      <created>1606505648507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606505648507</updated>
+    </task>
+    <task id="LOCAL-00002" summary="basic import implementation">
+      <created>1606505721373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606505721373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update ignore" />
+    <MESSAGE value="basic import implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic import implementation" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -166,5 +204,9 @@
         <watch expression="$collection" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

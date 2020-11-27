@@ -12,13 +12,6 @@
 
     <!-- 2.2 Files -->
 
-    <!-- All PHP files MUST use the Unix LF (linefeed) line ending. -->
-    <rule ref="Generic.Files.LineEndings">
-        <properties>
-            <property name="eolChar" value="\n"/>
-        </properties>
-    </rule>
-
     <!-- All PHP files MUST end with a single blank line. -->
     <!-- checked by PSR2.Files.EndFileNewline -->
 
