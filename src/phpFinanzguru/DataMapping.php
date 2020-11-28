@@ -4,10 +4,9 @@ namespace bwater\phpFinanzguru;
 
 final class DataMapping
 {
-
-    const NAME = 'name';
-    const TITLE = 'title';
-    const TYPE = 'type';
+    public const NAME = 'name';
+    public const TITLE = 'title';
+    public const TYPE = 'type';
 
     private static array $mapping
         = [

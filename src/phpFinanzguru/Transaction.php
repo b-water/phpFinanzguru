@@ -9,7 +9,7 @@ final class Transaction implements TransactionInterface
         $this->setAttributes($keys, $values);
     }
 
-    public function setAttributes(array $keys, array $values)
+    public function setAttributes(array $keys, array $values): void
     {
         foreach ($keys as $i => $key) {
             $source = $keys[$i];

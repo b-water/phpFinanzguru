@@ -11,6 +11,7 @@ use TypeError;
 
 final class Reader implements ReaderInterface
 {
+    private array $collection = [];
     private Spreadsheet $spreadsheet;
     private array $sheetDataArray = [];
 
@@ -70,6 +71,18 @@ final class Reader implements ReaderInterface
             $collection[] = $transaction;
         }
 
-        return $collection;
+        return $this->setCollection(...$collection)->getCollection();
+    }
+
+    public function setCollection(TransactionInterface ...$collection): self
+    {
+        $this->collection = $collection;
+
+        return $this;
+    }
+
+    public function getCollection(): array
+    {
+        return $this->collection;
     }
 }
