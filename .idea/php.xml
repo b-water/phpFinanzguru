@@ -54,6 +54,9 @@
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="08955c40-969f-4dd9-9532-9a4333a03f57" name="Debian GNU/Linux" home="wsl://DATA" debugger_id="php.debugger.XDebug">
+        <configuration_options>
+          <configuration_option name="-dxdebug.remote_mode" value="jit" />
+        </configuration_options>
         <remote_data INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DISTRIBUTION_ID="DEBIAN" />
       </interpreter>
     </interpreters>

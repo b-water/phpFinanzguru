@@ -25,6 +25,7 @@
         "phpoffice/phpspreadsheet": "^1.15"
     },
     "scripts": {
+        "tests": "phpunit tests",
         "phpstan": "phpstan analyse src tests",
         "phpunit": "phpunit tests",
         "phpcs": "phpcs src tests"

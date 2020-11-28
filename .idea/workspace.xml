@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/php.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Mapping.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,11 @@
   </component>
   <component name="PHPCodeSnifferProjectConfiguration">
     <option name="selectedConfigurationId" value="08955c40-969f-4dd9-9532-9a4333a03f57" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="ed070823-5cb2-4b2f-bff6-a256ac8d7a01" name="debian" />
+    </servers>
   </component>
   <component name="PhpStanProjectConfiguration">
     <option name="selectedConfigurationId" value="08955c40-969f-4dd9-9532-9a4333a03f57" />
@@ -103,23 +114,12 @@
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.ReaderTest.testConstruct">
-    <configuration name="ExcelReaderTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="bwater\Tests\ExcelReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ExcelReaderTest.testConstruct (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="bwater\Tests\ExcelReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ExcelReaderTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="bwater\phpFinanzguru\Tests\ExcelReaderTest" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ReaderTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="bwater\Tests\ReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
     <configuration name="ReaderTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="Debian GNU/Linux" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
       <TestRunner class="bwater\Tests\ReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
       <method v="2" />
     </configuration>
@@ -129,24 +129,20 @@
           <option name="interpreterName" value="Debian GNU/Linux" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WSL" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="debian" session_id="Phpstorm">
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="PHP Remote Debug.WSL" />
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct" />
-      <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct (1)" />
-      <item itemvalue="PHPUnit.ExcelReaderTest" />
       <item itemvalue="PHPUnit.ReaderTest.testConstruct" />
-      <item itemvalue="PHPUnit.ReaderTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.ReaderTest.testConstruct" />
-        <item itemvalue="PHPUnit.ReaderTest" />
-        <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct (1)" />
-        <item itemvalue="PHPUnit.ExcelReaderTest" />
-        <item itemvalue="PHPUnit.ExcelReaderTest.testConstruct" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +156,10 @@
       <updated>1606482960017</updated>
       <workItem from="1606482961954" duration="14502000" />
       <workItem from="1606506523653" duration="529000" />
-      <workItem from="1606513210963" duration="1360000" />
+      <workItem from="1606513210963" duration="1487000" />
+      <workItem from="1606517271509" duration="138000" />
+      <workItem from="1606517422483" duration="4222000" />
+      <workItem from="1606560635294" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="Update ignore">
       <created>1606505648507</created>
@@ -190,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606514508306</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix">
+      <created>1606514589596</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606514589596</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,9 +207,19 @@
     <MESSAGE value="basic import implementation" />
     <MESSAGE value="testing github actions" />
     <MESSAGE value="fix cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix cs" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/ReaderTest.php</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PHPUnitRunConfigurationType">
         <watch expression="$collection" />
