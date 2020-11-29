@@ -147,9 +147,13 @@ final class DataMapping implements DataMappingInterface
             ]
         ];
 
-    private function __construct() {}
+    private function __construct()
+    {
+    }
 
-    private function __clone() {}
+    private function __clone()
+    {
+    }
 
     public static function getInstance(): DataMappingInterface
     {
@@ -180,7 +184,7 @@ final class DataMapping implements DataMappingInterface
 
     public function hasTransactionType(string $type = ''): bool
     {
-        if(in_array($type, self::$transactionTypes, true)) {
+        if (in_array($type, self::$transactionTypes, true)) {
             return true;
         }
 
@@ -189,8 +193,9 @@ final class DataMapping implements DataMappingInterface
 
     public function addTransactionType(string $type = ''): bool
     {
-        if(!$this->hasTransactionType($type)) {
+        if ( ! $this->hasTransactionType($type)) {
             self::$transactionTypes[] = $type;
+
             return true;
         }
 
@@ -200,10 +205,11 @@ final class DataMapping implements DataMappingInterface
     public function getTransactionTypesAsAttributes(): array
     {
         $collection = [];
-        foreach(self::$transactionTypes as $type) {
-            $attribute = new Attribute('transactionType', $type);
+        foreach (self::$transactionTypes as $type) {
+            $attribute    = new Attribute('transactionType', $type);
             $collection[] = $attribute;
         }
+
         return $collection;
     }
 }

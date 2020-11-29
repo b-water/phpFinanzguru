@@ -1,4 +1,4 @@
-<?php declare(strict_types = 1);
+<?php declare(strict_types=1);
 
 namespace bwater\phpFinanzguru;
 
@@ -37,7 +37,7 @@ final class Reader implements ReaderInterface
             throw $t;
         }
 
-        if (!$this->getSpreadsheet() instanceof Spreadsheet) {
+        if ( ! $this->getSpreadsheet() instanceof Spreadsheet) {
             throw new TypeError('spreadsheet could not be loaded!');
         }
 
@@ -57,18 +57,18 @@ final class Reader implements ReaderInterface
             return $this->sheetDataArray;
         }
 
-        return $this->sheetDataArray = $this->spreadsheet->getActiveSheet()->toArray();
+        return $this->sheetDataArray = $this->spreadsheet->getActiveSheet()
+                                                         ->toArray();
     }
 
-    public function getColl(): CollectionInterface
-    {
-
-    }
-
-    public function setTransaction(array $fields, array $values, DataMappingInterface $mapping): TransactionInterface {
+    public function setTransaction(
+        array $fields,
+        array $values,
+        DataMappingInterface $mapping
+    ): TransactionInterface {
         $transaction = new Transaction($fields, $values, $mapping);
 
-        if($transaction->hasProperty('transactionType')) {
+        if ($transaction->hasProperty('transactionType')) {
             $this->mapping->addTransactionType($transaction->transactionType);
         }
 
@@ -81,17 +81,19 @@ final class Reader implements ReaderInterface
 
         // extract the fields
         $fields = $data[0];
-        $items = (count($data)-1);
+        $items  = (count($data) - 1);
 
         $transactions = [];
         for ($i = 1; $i < $items; $i++) {
-            $transaction = $this->setTransaction($fields, $data[$i], $this->mapping);
+            $transaction = $this->setTransaction($fields, $data[$i],
+                $this->mapping);
             $transactions[] = $transaction;
         }
 
         $collection = new Collection();
         $collection->setTransactions(...$transactions);
-        $collection->setTransactionTypes(...$this->mapping->getTransactionTypesAsAttributes());
+        $collection->setTransactionTypes(...
+            $this->mapping->getTransactionTypesAsAttributes());
 
         $this->collection = $collection;
 

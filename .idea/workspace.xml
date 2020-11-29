@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Attribute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +169,7 @@
       <workItem from="1606579327168" duration="1311000" />
       <workItem from="1606604429018" duration="3146000" />
       <workItem from="1606666601315" duration="8321000" />
+      <workItem from="1606675647686" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="Update ignore">
       <created>1606505648507</created>

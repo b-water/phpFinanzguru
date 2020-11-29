@@ -7,7 +7,8 @@ final class Attribute implements AttributeInterface
     private string $name = '';
     private string $value = '';
 
-    public function __construct(string $name, string $value) {
+    public function __construct(string $name, string $value)
+    {
         $this->setName($name);
         $this->setValue($value);
     }
