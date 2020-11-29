@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="Update ignore">
+    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Attribute.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Attribute.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/AttributeInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/AttributeInterface.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Collection.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Collection.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/CollectionInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CollectionInterface.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/DataMapping.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/DataMapping.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/DataMappingInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/DataMappingInterface.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Reader.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Reader.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ReaderInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ReaderInterface.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Transaction.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Transaction.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/TransactionInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/TransactionInterface.php.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Collection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +165,7 @@
       <workItem from="1606560635294" duration="2644000" />
       <workItem from="1606579327168" duration="1311000" />
       <workItem from="1606604429018" duration="3146000" />
-      <workItem from="1606666601315" duration="8137000" />
+      <workItem from="1606666601315" duration="8321000" />
     </task>
     <task id="LOCAL-00001" summary="Update ignore">
       <created>1606505648507</created>
@@ -231,6 +213,7 @@
     <MESSAGE value="testing github actions" />
     <MESSAGE value="fix cs" />
     <MESSAGE value="fix" />
+    <MESSAGE value="Adding Tests" />
     <MESSAGE value="Update ignore" />
     <option name="LAST_COMMIT_MESSAGE" value="Update ignore" />
   </component>
