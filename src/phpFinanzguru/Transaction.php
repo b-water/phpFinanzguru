@@ -30,7 +30,10 @@ final class Transaction implements TransactionInterface
         string $name = '',
         $value = '',
         string $type = ''
-    ): void {
+    ): bool {
+        if ($this->hasProperty($name)) {
+            return false;
+        }
         switch ($type) {
             case DataMapping::TYPE_INT:
                 $value = (int)$value;
@@ -54,6 +57,8 @@ final class Transaction implements TransactionInterface
         }
 
         $this->{$name} = $value;
+
+        return true;
     }
 
     public function hasProperty(string $name = ''): bool

@@ -23,5 +23,5 @@ interface TransactionInterface
      * @param string $value
      * @param string $type
      */
-    public function setProperty(string $name = '', $value = '', string $type = ''): void;
+    public function setProperty(string $name = '', $value = '', string $type = ''): bool;
 }
