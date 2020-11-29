@@ -23,17 +23,11 @@ interface ReaderInterface
      */
     public function getSheetDataArray(): array;
 
-    /**
-     * @return CollectionInterface
-     */
-    public function parse(): CollectionInterface;
 
     /**
-     * @param CollectionInterface $collection
-     *
      * @return $this
      */
-    public function setCollection(CollectionInterface $collection): self;
+    public function setCollection(): self;
 
     /**
      * @return array

@@ -15,6 +15,7 @@ final class DataMapping implements DataMappingInterface
     public const TYPE_BOOL = 'bool';
     public const TYPE_INT = 'int';
 
+
     private static array $transactionTypes = [];
 
     private static array $fields

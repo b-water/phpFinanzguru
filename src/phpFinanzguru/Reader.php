@@ -60,7 +60,22 @@ final class Reader implements ReaderInterface
         return $this->sheetDataArray = $this->spreadsheet->getActiveSheet()->toArray();
     }
 
-    public function parse(): CollectionInterface
+    public function getColl(): CollectionInterface
+    {
+
+    }
+
+    public function setTransaction(array $fields, array $values, DataMappingInterface $mapping): TransactionInterface {
+        $transaction = new Transaction($fields, $values, $mapping);
+
+        if($transaction->hasProperty('transactionType')) {
+            $this->mapping->addTransactionType($transaction->transactionType);
+        }
+
+        return $transaction;
+    }
+
+    public function setCollection(): self
     {
         $data = $this->getSheetDataArray();
 
@@ -78,21 +93,6 @@ final class Reader implements ReaderInterface
         $collection->setTransactions(...$transactions);
         $collection->setTransactionTypes(...$this->mapping->getTransactionTypesAsAttributes());
 
-        return $this->setCollection($collection)->getCollection();
-    }
-
-    public function setTransaction(array $fields, array $values, DataMappingInterface $mapping): TransactionInterface {
-        $transaction = new Transaction($fields, $values, $mapping);
-
-        if($transaction->hasProperty('transactionType')) {
-            $this->mapping->addTransactionType($transaction->transactionType);
-        }
-
-        return $transaction;
-    }
-
-    public function setCollection(CollectionInterface $collection): self
-    {
         $this->collection = $collection;
 
         return $this;

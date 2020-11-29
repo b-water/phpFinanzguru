@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="">
+    <list default="true" id="4193df1e-838d-416c-a613-80363a6f8d50" name="Default Changelist" comment="Update ignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Attribute.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Attribute.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/AttributeInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/AttributeInterface.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Collection.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Collection.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/CollectionInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/CollectionInterface.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/DataMapping.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/DataMapping.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/DataMappingInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/DataMappingInterface.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Reader.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Reader.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ReaderInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ReaderInterface.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Transaction.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Transaction.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/TransactionInterface.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/TransactionInterface.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Collection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/DataMapping.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Reader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/ReaderInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/Transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpFinanzguru/TransactionInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpFinanzguru/TransactionInterface.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,15 +119,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\nico\dev\phpFinanzguru" />
       <recent name="\\wsl$\Debian\home\nico\dev\phpFinanzguru\src\phpFinanzguru" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ReaderTest.testConstruct">
+  <component name="RunManager" selected="PHPUnit.TransactionTest.testConstruct">
     <configuration name="ReaderTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -123,6 +136,10 @@
         </PhpTestInterpreterSettings>
       </CommandLine>
       <TestRunner class="bwater\Tests\ReaderTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/ReaderTest.php" method="testConstruct" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TransactionTest.testConstruct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="bwater\Tests\TransactionTest" configuration_file="/home/nico/dev/phpFinanzguru/phpunit.xml" file="$PROJECT_DIR$/tests/unit/TransactionTest.php" method="testConstruct" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -141,9 +158,11 @@
       <item itemvalue="PHP Remote Debug.WSL" />
       <item itemvalue="PHPUnit.phpunit.xml" />
       <item itemvalue="PHPUnit.ReaderTest.testConstruct" />
+      <item itemvalue="PHPUnit.TransactionTest.testConstruct" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.TransactionTest.testConstruct" />
         <item itemvalue="PHPUnit.ReaderTest.testConstruct" />
       </list>
     </recent_temporary>
@@ -164,7 +183,7 @@
       <workItem from="1606560635294" duration="2644000" />
       <workItem from="1606579327168" duration="1311000" />
       <workItem from="1606604429018" duration="3146000" />
-      <workItem from="1606666601315" duration="4899000" />
+      <workItem from="1606666601315" duration="8137000" />
     </task>
     <task id="LOCAL-00001" summary="Update ignore">
       <created>1606505648507</created>
@@ -208,28 +227,14 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update ignore" />
     <MESSAGE value="basic import implementation" />
     <MESSAGE value="testing github actions" />
     <MESSAGE value="fix cs" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Update ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ignore" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/ReaderTest.php</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/phpFinanzguru/Reader.php</url>
-          <line>72</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PHPUnitRunConfigurationType">
         <watch expression="$collection" />

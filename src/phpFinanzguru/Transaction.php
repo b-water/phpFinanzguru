@@ -32,16 +32,16 @@ final class Transaction implements TransactionInterface
         string $type = ''
     ): void {
         switch ($type) {
-            case $this->mapping::TYPE_INT:
+            case DataMapping::TYPE_INT:
                 $value = (int)$value;
                 break;
-            case $this->mapping::TYPE_DECIMAL:
+            case DataMapping::TYPE_DECIMAL:
                 $value = (float)$value;
                 break;
-            case 'string':
+            case DataMapping::TYPE_STRING:
                 $value = (string)$value;
                 break;
-            case 'bool':
+            case DataMapping::TYPE_BOOL:
                 if ($value === 'nein') {
                     $value = false;
                 } elseif ($value === 'ja') {
