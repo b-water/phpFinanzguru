@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18f6ef46e2fb681cd4151a2ba5df1c06",
+    "content-hash": "b8d7d22bb4393740e2f2db0d9028babe",
     "packages": [
         {
             "name": "maennchen/zipstream-php",
@@ -1280,16 +1280,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.57",
+            "version": "0.12.58",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "f9909d1d0c44b4cbaf72babcf80e8f14d6fdd55b"
+                "reference": "2a4847df6047b30af28854ed9dc95304cdb56ae5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f9909d1d0c44b4cbaf72babcf80e8f14d6fdd55b",
-                "reference": "f9909d1d0c44b4cbaf72babcf80e8f14d6fdd55b",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2a4847df6047b30af28854ed9dc95304cdb56ae5",
+                "reference": "2a4847df6047b30af28854ed9dc95304cdb56ae5",
                 "shasum": ""
             },
             "require": {
@@ -1320,7 +1320,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.57"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.58"
             },
             "funding": [
                 {
@@ -1336,20 +1336,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-21T12:53:28+00:00"
+            "time": "2020-11-29T13:32:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.4",
+            "version": "9.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "0a7f0acf9269c190fd982b5c04423feae986b6e0"
+                "reference": "f3e026641cc91909d421802dd3ac7827ebfd97e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/0a7f0acf9269c190fd982b5c04423feae986b6e0",
-                "reference": "0a7f0acf9269c190fd982b5c04423feae986b6e0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f3e026641cc91909d421802dd3ac7827ebfd97e1",
+                "reference": "f3e026641cc91909d421802dd3ac7827ebfd97e1",
                 "shasum": ""
             },
             "require": {
@@ -1363,7 +1363,7 @@
                 "sebastian/code-unit-reverse-lookup": "^2.0.2",
                 "sebastian/complexity": "^2.0",
                 "sebastian/environment": "^5.1.2",
-                "sebastian/lines-of-code": "^1.0",
+                "sebastian/lines-of-code": "^1.0.3",
                 "sebastian/version": "^3.0.1",
                 "theseer/tokenizer": "^1.2.0"
             },
@@ -1405,7 +1405,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.4"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.5"
             },
             "funding": [
                 {
@@ -1413,7 +1413,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-27T06:15:15+00:00"
+            "time": "2020-11-28T06:44:49+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2329,16 +2329,16 @@
         },
         {
             "name": "sebastian/lines-of-code",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/lines-of-code.git",
-                "reference": "acf76492a65401babcf5283296fa510782783a7a"
+                "reference": "c1c2e997aa3146983ed888ad08b15470a2e22ecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/acf76492a65401babcf5283296fa510782783a7a",
-                "reference": "acf76492a65401babcf5283296fa510782783a7a",
+                "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/c1c2e997aa3146983ed888ad08b15470a2e22ecc",
+                "reference": "c1c2e997aa3146983ed888ad08b15470a2e22ecc",
                 "shasum": ""
             },
             "require": {
@@ -2374,7 +2374,7 @@
             "homepage": "https://github.com/sebastianbergmann/lines-of-code",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
-                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.2"
+                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.3"
             },
             "funding": [
                 {
@@ -2382,7 +2382,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-26T17:03:56+00:00"
+            "time": "2020-11-28T06:42:11+00:00"
         },
         {
             "name": "sebastian/object-enumerator",
