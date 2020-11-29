@@ -27,9 +27,4 @@ final class Collection implements CollectionInterface
     {
         return $this->transactionTypes;
     }
-
-    public function getContracts(): array
-    {
-
-    }
 }
