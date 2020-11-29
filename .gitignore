@@ -7,7 +7,6 @@
 
 ### PHPCodeSniffer ###
 # CodeSniffer
-
 /vendor/*
 /wpcs/*
 
@@ -119,4 +118,5 @@ fabric.properties
 # Reference: https://phpunit.de/
 
 # Generated files
+reports
 .phpunit.result.cache
