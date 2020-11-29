@@ -4,6 +4,7 @@ namespace bwater\Tests;
 
 use bwater\phpFinanzguru\Attribute;
 use PHPUnit\Framework\TestCase;
+use Prophecy\Prophet;
 
 final class AttributeTest extends TestCase
 {
@@ -11,7 +12,7 @@ final class AttributeTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->prophet = new \Prophecy\Prophet;
+        $this->prophet = new Prophet;
     }
 
     public function testConstruct(): void

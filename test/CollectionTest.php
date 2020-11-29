@@ -2,12 +2,11 @@
 
 namespace bwater\Tests;
 
-use bwater\phpFinanzguru\Attribute;
 use bwater\phpFinanzguru\AttributeInterface;
 use bwater\phpFinanzguru\Collection;
-use bwater\phpFinanzguru\Transaction;
 use bwater\phpFinanzguru\TransactionInterface;
 use PHPUnit\Framework\TestCase;
+use Prophecy\Prophet;
 
 final class CollectionTest extends TestCase
 {
@@ -15,7 +14,7 @@ final class CollectionTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->prophet = new \Prophecy\Prophet;
+        $this->prophet = new Prophet;
     }
 
     public function testSetTransactions(): void

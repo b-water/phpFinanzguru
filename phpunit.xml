@@ -6,8 +6,8 @@
          verbose="true"
 >
     <testsuites>
-        <testsuite name="tests">
-            <directory suffix="Test.php">./tests/unit</directory>
+        <testsuite name="test">
+            <directory suffix="Test.php">./test</directory>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">

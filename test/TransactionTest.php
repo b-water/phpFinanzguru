@@ -7,7 +7,7 @@ use bwater\phpFinanzguru\DataMappingInterface;
 use bwater\phpFinanzguru\Transaction;
 use bwater\phpFinanzguru\TransactionInterface;
 use PHPUnit\Framework\TestCase;
-use Prophecy\Argument;
+use Prophecy\Prophet;
 
 final class TransactionTest extends TestCase
 {
@@ -15,7 +15,7 @@ final class TransactionTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->prophet = new \Prophecy\Prophet;
+        $this->prophet = new Prophet;
     }
 
     public function testConstruct(): void

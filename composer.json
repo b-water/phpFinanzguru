@@ -13,7 +13,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "bwater\\Tests\\": "tests/"
+            "bwater\\Tests\\": "test/"
         }
     },
     "require-dev": {
@@ -26,10 +26,10 @@
         "phpoffice/phpspreadsheet": "^1.15"
     },
     "scripts": {
-        "tests": "phpunit tests",
-        "phpstan": "phpstan analyse src tests",
-        "phpunit": "phpunit tests",
-        "phpcs": "phpcs src tests",
+        "tests": "phpunit test",
+        "phpstan": "phpstan analyse src test",
+        "phpunit": "phpunit test",
+        "phpcs": "phpcs src test",
         "coverage": "phpunit --coverage-html reports/"
     }
 }
