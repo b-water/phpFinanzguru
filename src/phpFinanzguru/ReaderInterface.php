@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace bwater\phpFinanzguru;
 
@@ -24,19 +24,19 @@ interface ReaderInterface
     public function getSheetDataArray(): array;
 
     /**
-     * @return array
+     * @return CollectionInterface
      */
-    public function parse(): array;
+    public function parse(): CollectionInterface;
 
     /**
-     * @param TransactionInterface ...$collection
+     * @param CollectionInterface $collection
      *
      * @return $this
      */
-    public function setCollection(TransactionInterface ...$collection): self;
+    public function setCollection(CollectionInterface $collection): self;
 
     /**
      * @return array
      */
-    public function getCollection(): array;
+    public function getCollection(): CollectionInterface;
 }

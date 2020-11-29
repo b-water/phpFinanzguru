@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace bwater\phpFinanzguru;
 
@@ -7,14 +7,21 @@ interface TransactionInterface
     /**
      * TransactionInterface constructor.
      *
-     * @param array $keys
+     * @param array $fields
      * @param array $values
      */
-    public function __construct(array $keys, array $values);
+    public function __construct(array $fields, array $values, DataMappingInterface $mapping);
 
     /**
-     * @param array $keys
+     * @param array $fields
      * @param array $values
      */
-    public function setAttributes(array $keys, array $values): void;
+    public function setProperties(array $fields, array $values): void;
+
+    /**
+     * @param string $name
+     * @param string $value
+     * @param string $type
+     */
+    public function setProperty(string $name = '', $value = '', string $type = ''): void;
 }

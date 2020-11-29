@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace bwater\phpFinanzguru;
 
@@ -11,12 +11,15 @@ use TypeError;
 
 final class Reader implements ReaderInterface
 {
-    private array $collection = [];
+    private Collection $collection;
     private Spreadsheet $spreadsheet;
     private array $sheetDataArray = [];
+    private DataMappingInterface $mapping;
 
     public function __construct(string $file = '')
     {
+        $this->mapping = DataMapping::getInstance();
+
         if ('' === $file) {
             throw new InvalidArgumentException('file param is empty');
         }
@@ -57,31 +60,45 @@ final class Reader implements ReaderInterface
         return $this->sheetDataArray = $this->spreadsheet->getActiveSheet()->toArray();
     }
 
-    public function parse(): array
+    public function parse(): CollectionInterface
     {
         $data = $this->getSheetDataArray();
 
-        // extract the keys
-        $keys = $data[0];
-        $rowsToParse = (count($data)-1);
+        // extract the fields
+        $fields = $data[0];
+        $items = (count($data)-1);
 
-        $collection = [];
-        for ($i = 1; $i < $rowsToParse; $i++) {
-            $transaction = new Transaction($keys, $data[$i]);
-            $collection[] = $transaction;
+        $transactions = [];
+        for ($i = 1; $i < $items; $i++) {
+            $transaction = $this->setTransaction($fields, $data[$i], $this->mapping);
+            $transactions[] = $transaction;
         }
 
-        return $this->setCollection(...$collection)->getCollection();
+        $collection = new Collection();
+        $collection->setTransactions(...$transactions);
+        $collection->setTransactionTypes(...$this->mapping->getTransactionTypesAsAttributes());
+
+        return $this->setCollection($collection)->getCollection();
     }
 
-    public function setCollection(TransactionInterface ...$collection): self
+    public function setTransaction(array $fields, array $values, DataMappingInterface $mapping): TransactionInterface {
+        $transaction = new Transaction($fields, $values, $mapping);
+
+        if($transaction->hasProperty('transactionType')) {
+            $this->mapping->addTransactionType($transaction->transactionType);
+        }
+
+        return $transaction;
+    }
+
+    public function setCollection(CollectionInterface $collection): self
     {
         $this->collection = $collection;
 
         return $this;
     }
 
-    public function getCollection(): array
+    public function getCollection(): CollectionInterface
     {
         return $this->collection;
     }

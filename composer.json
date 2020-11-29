@@ -28,6 +28,7 @@
         "tests": "phpunit tests",
         "phpstan": "phpstan analyse src tests",
         "phpunit": "phpunit tests",
-        "phpcs": "phpcs src tests"
+        "phpcs": "phpcs src tests",
+        "coverage": "phpunit --coverage-html reports/"
     }
 }
