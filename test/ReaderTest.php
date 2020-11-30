@@ -2,8 +2,8 @@
 
 namespace bwater\Tests;
 
+use bwater\phpFinanzguru\CollectionInterface;
 use bwater\phpFinanzguru\Reader;
-use bwater\phpFinanzguru\TransactionInterface;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PHPUnit\Framework\TestCase;
 
@@ -27,8 +27,8 @@ final class ReaderTest extends TestCase
         $this->assertInstanceOf(Spreadsheet::class, $reader->getSpreadsheet());
 
         $collection = $reader->setCollection()->getCollection();
-        $this->assertIsArray($collection);
-        $this->assertNotEmpty($collection);
-        $this->assertInstanceOf(TransactionInterface::class, $collection[0]);
+        $this->assertInstanceOf(CollectionInterface::class, $collection);
+        $this->assertNotEmpty($collection->getTransactions());
+        $this->assertNotEmpty($collection->getTransactionTypes());
     }
 }
