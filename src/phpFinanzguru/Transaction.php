@@ -18,9 +18,15 @@ final class Transaction implements TransactionInterface
     public function setProperties(array $fields, array $values): void
     {
         foreach ($fields as $i => $key) {
-            $source = $fields[$i];
-            $name   = $this->mapping->getFieldName($source);
-            $type   = $this->mapping->getFieldType($source);
+            $source       = $fields[$i];
+            $name         = $this->mapping->getFieldName($source);
+            $type         = $this->mapping->getFieldType($source);
+            $useAttribute = $this->mapping->getFieldUseAttribute($source);
+
+            if ($useAttribute === true) {
+                $attribute = new Attribute($name, $values[$i]);
+                $this->setProperty($name, $attribute);
+            }
 
             $this->setProperty($name, $values[$i], $type);
         }
@@ -45,20 +51,28 @@ final class Transaction implements TransactionInterface
                 $value = (string)$value;
                 break;
             case DataMapping::TYPE_BOOL:
-                if ($value === 'nein') {
-                    $value = false;
-                } elseif ($value === 'ja') {
-                    $value = true;
+                if(is_string($value)) {
+                    $value = $this->fixStringToBool($value);
                 }
-                break;
-            default:
-                $value = null;
                 break;
         }
 
         $this->{$name} = $value;
 
         return true;
+    }
+
+    public function fixStringToBool(string $value): ?bool
+    {
+        if ($value === 'nein') {
+            return false;
+        }
+
+        if ($value === 'ja') {
+            return true;
+        }
+
+        return null;
     }
 
     public function hasProperty(string $name = ''): bool

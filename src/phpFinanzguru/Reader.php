@@ -68,8 +68,9 @@ final class Reader implements ReaderInterface
     ): TransactionInterface {
         $transaction = new Transaction($fields, $values, $mapping);
 
-        if ($transaction->hasProperty('transactionType')) {
-            $this->mapping->addTransactionType($transaction->transactionType);
+        if ($transaction->hasProperty('transactionType') &&
+            $transaction->transactionType instanceof Attribute) {
+            $this->mapping->addTransactionType($transaction->transactionType->getValue());
         }
 
         return $transaction;

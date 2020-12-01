@@ -24,4 +24,11 @@ interface TransactionInterface
      * @param string $type
      */
     public function setProperty(string $name = '', $value = '', string $type = ''): bool;
+
+    /**
+     * @param string $value
+     *
+     * @return bool|null
+     */
+    public function fixStringToBool(string $value): ?bool;
 }
