@@ -51,7 +51,7 @@ final class Transaction implements TransactionInterface
                 $value = (string)$value;
                 break;
             case DataMapping::TYPE_BOOL:
-                if(is_string($value)) {
+                if (is_string($value)) {
                     $value = $this->fixStringToBool($value);
                 }
                 break;
