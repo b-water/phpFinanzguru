@@ -6,7 +6,7 @@ phpFinanzguru reads the Excel Files of the Finanzguru App giving you a flexible 
 
 For now add this repo to your composer.json
 
-```
+```json
 "repositories":[
     {
         "type": "vcs",
@@ -17,11 +17,11 @@ For now add this repo to your composer.json
 
 and
 
-```
-    "require": {
-        ...
-        "b-water/php-finanzguru": "dev-master"
-    },
+```json
+"require": {
+    ...
+    "b-water/php-finanzguru": "dev-master"
+},
 ```
 
 So far didnt setup a package.
@@ -30,7 +30,7 @@ So far didnt setup a package.
 
 Just instance a new Reader Object with your Finanzguru Excel Export
 
-```
+```php
 try {
     $reader = new Reader($file->getRealPath());
     $collection = $reader->getCollection();
