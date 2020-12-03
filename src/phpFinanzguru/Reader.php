@@ -76,7 +76,7 @@ final class Reader implements ReaderInterface
         return $transaction;
     }
 
-    public function setCollection(): self
+    public function getCollection(): CollectionInterface
     {
         $data = $this->getSheetDataArray();
 
@@ -93,16 +93,8 @@ final class Reader implements ReaderInterface
 
         $collection = new Collection();
         $collection->setTransactions(...$transactions);
-        $collection->setTransactionTypes(...
-            $this->mapping->getTransactionTypesAsAttributes());
+        $collection->setTransactionTypes(...$this->mapping->getTransactionTypesAsAttributes());
 
-        $this->collection = $collection;
-
-        return $this;
-    }
-
-    public function getCollection(): CollectionInterface
-    {
-        return $this->collection;
+        return $this->collection = $collection;
     }
 }

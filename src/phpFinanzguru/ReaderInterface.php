@@ -25,11 +25,6 @@ interface ReaderInterface
 
 
     /**
-     * @return $this
-     */
-    public function setCollection(): self;
-
-    /**
      * @return array
      */
     public function getCollection(): CollectionInterface;

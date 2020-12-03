@@ -6,6 +6,7 @@ final class Collection implements CollectionInterface
 {
     private array $transactions = [];
     private array $transactionTypes = [];
+    private array $accounts = [];
 
     public function setTransactions(TransactionInterface ...$collection): CollectionInterface
     {
@@ -26,5 +27,15 @@ final class Collection implements CollectionInterface
     public function getTransactionTypes(): array
     {
         return $this->transactionTypes;
+    }
+
+    public function setAccounts(AttributeInterface ...$accounts): CollectionInterface
+    {
+        $this->accounts = $accounts;
+    }
+
+    public function getAccounts(): array
+    {
+        return $this->accounts;
     }
 }

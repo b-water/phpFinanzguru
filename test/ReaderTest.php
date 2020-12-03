@@ -26,7 +26,7 @@ final class ReaderTest extends TestCase
         $reader = new Reader($this->file);
         $this->assertInstanceOf(Spreadsheet::class, $reader->getSpreadsheet());
 
-        $collection = $reader->setCollection()->getCollection();
+        $collection = $reader->getCollection();
         $this->assertInstanceOf(CollectionInterface::class, $collection);
         $this->assertNotEmpty($collection->getTransactions());
         $this->assertNotEmpty($collection->getTransactionTypes());

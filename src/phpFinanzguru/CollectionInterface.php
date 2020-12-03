@@ -15,4 +15,26 @@ interface CollectionInterface
      * @return array
      */
     public function getTransactions(): array;
+
+    /**
+     * @param AttributeInterface ...$transactionTypes
+     */
+    public function setTransactionTypes(AttributeInterface ...$transactionTypes): void;
+
+    /**
+     * @return array
+     */
+    public function getTransactionTypes(): array;
+
+    /**
+     * @param AttributeInterface ...$accounts
+     *
+     * @return $this
+     */
+    public function setAccounts(AttributeInterface ...$accounts): self;
+
+    /**
+     * @return array
+     */
+    public function getAccounts(): array;
 }
