@@ -31,7 +31,7 @@ interface CollectionInterface
      *
      * @return $this
      */
-    public function setAccounts(AttributeInterface ...$accounts): self;
+    public function setAccounts(AttributeInterface ...$accounts): void;
 
     /**
      * @return array

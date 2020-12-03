@@ -29,7 +29,7 @@ final class Collection implements CollectionInterface
         return $this->transactionTypes;
     }
 
-    public function setAccounts(AttributeInterface ...$accounts): CollectionInterface
+    public function setAccounts(AttributeInterface ...$accounts): void
     {
         $this->accounts = $accounts;
     }
