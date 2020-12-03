@@ -1,36 +1,45 @@
-# phpFinanzguru
+# phpFinanzguru (Work in Progress)
 
 phpFinanzguru reads the Excel Files of the Finanzguru App giving you a flexible API to work with your Data.
 
-## Getting Started
-
-...
-
-### Prerequisites
-
-...
-
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+For now add this repo to your composer.json
 
 ```
-Give the example
+"repositories":[
+    {
+        "type": "vcs",
+        "url": "git@github.com:b-water/phpFinanzguru.git"
+    }
+],
 ```
 
-And repeat
+and
 
 ```
-until finished
+    "require": {
+        ...
+        "b-water/php-finanzguru": "dev-master"
+    },
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+So far didnt setup a package.
+
+### How to Use
+
+Just instance a new Reader Object with your Finanzguru Excel Export
+
+```
+try {
+    $reader = new Reader($file->getRealPath());
+    $collection = $reader->getCollection();
+} catch (Throwable $t) {
+    die($t);
+}
+```
+
+This will return a Collection Instance representing all of your transactions
 
 ## License
 
