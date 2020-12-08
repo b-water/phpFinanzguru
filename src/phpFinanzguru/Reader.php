@@ -71,6 +71,7 @@ final class Reader implements ReaderInterface
         if ($transaction->hasProperty('transactionType') &&
             $transaction->transactionType instanceof Attribute) {
             $this->mapping->addTransactionType($transaction->transactionType->getValue());
+            $this->mapping->addAccount($transaction->account, $transaction->accountName);
         }
 
         return $transaction;
@@ -93,7 +94,8 @@ final class Reader implements ReaderInterface
 
         $collection = new Collection();
         $collection->setTransactions(...$transactions);
-        $collection->setTransactionTypes(...$this->mapping->getTransactionTypesAsAttributes());
+        $collection->setTransactionTypes(...$this->mapping->getTransactionTypes(true));
+        $collection->setAccounts(...$this->mapping->getAccounts(true));
 
         return $this->collection = $collection;
     }

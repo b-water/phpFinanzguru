@@ -54,5 +54,5 @@ interface DataMappingInterface
     /**
      * @return array
      */
-    public function getTransactionTypesAsAttributes(): array;
+    public function getTransactionTypes(bool $asAttribute = false): array;
 }
